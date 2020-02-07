@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="#08F32525"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#DCF32525"
+            android:gravity="center"
+            android:padding="5dp"
+            android:textStyle="bold"
+            android:text="You want to proceed....."
+            android:textColor="#ffffff"
+            android:textSize="13dp"
+            app:fontFamily="@font/adamina" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="30dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp">
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="withQR"
+                android:padding="7dp"
+                app:fontFamily="@font/adamina"
+                android:textSize="12dp"
+                android:text="With QR" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12dp"
+                android:padding="7dp"
+                app:fontFamily="@font/adamina"
+                android:onClick="withoutQR"
+                android:text="Without QR" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="3dp">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:background="#DCF32525"
+                app:fontFamily="@font/adamina"
+                android:textColor="@color/white"
+                android:layout_centerHorizontal="true"
+                android:text="OK" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>
